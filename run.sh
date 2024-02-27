@@ -4,4 +4,4 @@
 # Here "-gcflags" options allows using the debugger while using plugins.
 # Without this options an error is thrown saying that the build in incompatible.
 #
-go run -gcflags='all=-N -l' github.com/progpjs/embedProgpJs/v2
+go run .
