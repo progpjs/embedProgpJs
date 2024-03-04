@@ -47,7 +47,7 @@ func jsSamplesFunctionCaller(group *progpAPI.FunctionGroup) {
 	// Go compile will not accept the change.
 	//
 	//
-	gMyJavascriptFunctionCaller = progpjs.GetFunctionCaller(progpjs.GetFunctionCaller(&implStringStringCaller{})).(StringStringCaller)
+	gMyJavascriptFunctionCaller = progpjs.GetFunctionCaller(&implStringStringCaller{}).(StringStringCaller)
 
 	// Here it's a function allowing to test our caller.
 	// From javascript we can do : testStringStringCaller((name, forename) => console.log("Hello ", name, " ", forename));
